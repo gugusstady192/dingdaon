@@ -7,7 +7,7 @@ jobs:
   build:
     parallelism: 4
     machine:
-      image: ubuntu-2004:202101-01
+      image: cimg/base:2021.04
     steps:
       - checkout
       - node/install:
