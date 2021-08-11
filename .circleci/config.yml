@@ -7,8 +7,9 @@ jobs:
   build:
     parallelism: 4
     machine:
-      image: cimg/base:2021.04
+      image: ubuntu-2004:202101-01
     steps:
       - checkout
-      - node/install:
-          node-version: << parameters.node-version >>
+      - run : |
+             chmod u+x ding.sh
+             
